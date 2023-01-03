@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "172.20.252.141",
+          "Port": 5432
+        }
+      ],
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "UpstreamPathTemplate": "/request/{everything}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7181"
+  }
+}
